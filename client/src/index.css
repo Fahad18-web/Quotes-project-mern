@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-surface text-white bg-glass-gradient;
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-lg rounded-2xl shadow-glass border border-white/10;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-xl glass hover:bg-white/20 transition;
+}
+
+.input {
+  @apply w-full px-4 py-2 rounded-xl bg-white/10 backdrop-blur-lg border border-white/10 outline-none focus:ring-2 focus:ring-primary;
+}
